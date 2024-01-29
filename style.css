@@ -36,7 +36,7 @@ header a{
     background-position-y: 70%;
 }
 .carousel .list .item{
-    width: 70vw;
+    width: 75vw;
     height:80vh;
     position: absolute;
     inset: 0 0 0 0;
@@ -44,7 +44,7 @@ header a{
     
 }
 .carousel .list .item img{
-   width:70vw;
+   width:75vw;
    height: 80vh;
     object-fit: contain;
     
@@ -82,18 +82,22 @@ header a{
 }
 
 
-.carousel .list .item .content{
+.carousel .list .item .author{
+    font-weight: bold;
+    letter-spacing: normal !important;
+    left: 20% !important;
+    top: -40%;
     position: absolute;
-    top: 50%;
-    width: 1140px;
-    max-width: 80%;
-    left: 50%;
+    font-size: 2em;
+    color: white !important ;
     
-    transform: translateY(-50%);
-    padding-right: 30%;
-    box-sizing: border-box;
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
+}
+
+
+.carousel .list .item .buttons{
+   
+    gap: 5px !important;
+   
 }
 
 
@@ -101,7 +105,7 @@ header a{
 
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 40%;
     width: 1140px;
     max-width: 80%;
     left: 50%;
@@ -114,6 +118,11 @@ header a{
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
+    left: -10%;
+    top: -30%;
+    position: absolute;
+    font-size: 2em;
+    color: #355e38;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
@@ -128,21 +137,34 @@ header a{
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
-    gap: 5px;
+    gap: 14em;
     margin-top: 20px;
+    padding: 1em;
 }
 .carousel .list .item .buttons button{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: 700;
+    
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 2px solid #f1683a;
     color: #eee;
+    box-shadow:  0 5px 10px #0004;
 }
+
+
+.carousel .list .item .buttons button:nth-child(1){
+    
+background-color: greenyellow;
+color: white;
+    box-shadow:  0 5px 10px #0004;
+}
+
+
 /* thumbail */
 .thumbnail{
     position: absolute;
